@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 : 데이터 제어하기</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/6f6092d2ea.js" crossorigin="anonymous"></script>
+
+    <!-- style -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/bg_grid.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+</head>
+<body class="main">
+	<header id="header">
+		<div class="container">
+			<h1>JavaScript</h1>
+			<h2>Study Note for Web Programming</h2>
+			<p>Maintained by <a href="https://github.com/byahram">Ahram Kim</a></p>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<nav id="nav">
+        <ul>
+            <li><a href="data_saving.html">데이터 저장하기</a></li>
+            <li><a href="data_calling.html">데이터 불러오기</a></li>
+            <li><a href="data_executing.html">데이터 실행하기</a></li>
+            <li class="active"><a href="data_controlling.html">데이터 제어하기</a></li>
+        </ul>
+        <ul>
+            <li><a href="object_string.html">문자열 객체</a></li>
+            <li><a href="object_array.html">배열 객체</a></li>
+            <li><a href="object_math.html">수학 객체</a></li>
+            <li><a href="object_number.html">숫자 객체</a></li>
+            <li><a href="object_window.html">브라우저 객체</a></li>
+            <li><a href="object_element.html">요소 객체</a></li>
+            <li><a href="object_event.html">이벤트 객체</a></li>
+            <li><a href="object_jquery.html">제이쿼리</a></li>
+        </ul>
+        <ul class="effect">
+            <li><a href="effect_search.html">검색 효과</a></li>
+            <li><a href="effect_quiz.html">퀴즈 효과</a></li>
+            <li><a href="effect_data.html">데이터 효과</a></li>
+            <li><a href="https://byahram.github.io/mouse-effect/">마우스 효과</a></li>
+            <li><a href="https://byahram.github.io/slider-effect/">슬라이드 효과</a></li>
+            <li><a href="https://byahram.github.io/parallax-effect/">패랠랙스 효과</a></li>
+            <li><a href="effect_game.html">게임 효과</a></li>
+        </ul>
+    </nav>
+	<!-- //nav -->
+
+	<main id="main">
+		<div class="container">
+            <article class="main_menu">
+                <ul>
+                    <li><a href="#sample1"> 01. if문</a></li>
+                    <li><a href="#sample2"> 02. if문 생략</a></li>
+                    <li><a href="#sample3"> 03. 다중 if문</a></li>
+                    <li><a href="#sample4"> 04. 중첩 if문</a></li>
+                    <li><a href="#sample5"> 05. 삼항 연산자</a></li>
+                    <li><a href="#sample6"> 06. switch문</a></li>
+                    <li><a href="#sample7"> 07. while문</a></li>
+                    <li><a href="#sample8"> 08. do while문</a></li>
+                    <li><a href="#sample9"> 09. for문</a></li>
+                    <li><a href="#sample10"> 10. 중첩 for문</a></li>
+                    <li><a href="#sample11"> 11. break문</a></li>
+                    <li><a href="#sample12"> 12. continue문</a></li>
+                </ul>
+            </article>
+            <!-- //main_menu -->
+
+			<article id="sample01">
+				<h1>01. if문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    //true, false, 1, 0, "1", "0", null, undefined, [], {}
+    if(true){
+        document.write("살행되었습니다.(true)"); 
+     } else {
+         document.write("실행되었습니다.(false)")
+     }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample01_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample01 -->
+
+			<article id="sample02">
+				<h1>02. if문 생략</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    const num = 100;
+
+    if(num == 100) document.write("실행되었습니다.(true)");
+    else document.write("실행되었습니다.(false)");
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample02_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample02 -->
+
+			<article id="sample03">
+				<h1>03. 다중 if문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    const num = 100;
+
+    if(num == 90){
+        document.write("실행되었습니다.(num==90)");
+    } else if (num == 100){
+        document.write("실행되었습니다.(num==100)");
+    } else if (num == 110){
+        document.write("실행되었습니다.(num==110)");
+    } else if (num == 120){
+        document.write("실행되었습니다.(num==120)");
+    } else {
+        document.write("실행되었습니다.(num==값이없음)");
+    }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample03_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample03 -->
+
+			<article id="sample04">
+				<h1>04. 중첩 if문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    const num = 100;
+
+    if(num == 100){
+        document.write("실행되었습니다.(1)");
+        if(num == 100){
+            document.write("실행되었습니다.(2)");
+            if(num == 100){
+                document.write("실행되었습니다.(3)");
+            }
+        }
+    } else {
+        document.write("실행되었습니다.(4)");
+    }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample04_result">
+                                </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample04 -->
+
+			<article id="sample05">
+				<h1>05. 삼항 연산자(조건부 연산자)</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    const num = 100;
+
+    //if(num == 100){
+    //    document.write("true");
+    //} else {
+    //    document.write("false");
+    //}
+
+    (num == 100) ? document.write("true") : document.write("false");
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample05_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample05 -->
+
+			<article id="sample06">
+				<h1>06. switch문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    const num = 100;
+
+    switch(num){
+        case 100 :
+            document.write("실행되었습니다(num==100)");
+        break;
+        case 200 :
+            document.write("실행되었습니다(num==200)");
+        break;
+        case 300 :
+            document.write("실행되었습니다(num==300)");
+        break;
+        case 400 :
+            document.write("실행되었습니다(num==400)");
+        break;
+        default :
+            document.write("실행되었습니다.(num==값이없음");
+    }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample06_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample06 -->
+
+            <article id="sample07">
+				<h1>07. while문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    let num = 1;
+
+    while(num &lt;= 5){
+        document.write(num + ". 실행되었습니다.");
+        num++;
+    }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample07_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample07 -->
+
+            <article id="sample08">
+				<h1>08. do while문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    let num = 1;
+            
+    do {
+        document.write(num + ". 실행되었습니다.");
+        num++;
+    } while (num &lt;= 5)
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample08_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample08 -->
+
+            <article id="sample09">
+				<h1>09. for문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    for(let i=1; i&lt;=5; i++){
+        document.write(i + ". 실행되었습니다.");
+    }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample09_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample09 -->
+
+            <article id="sample10">
+				<h1>10. 중첩 for문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    for(let i=1; i&lt;=2; i++){
+        document.write(i + ". 실행(i)되었습니다.");
+        for(let j=1; j&lt;=3; j++){
+            document.write(j + ". 실행(j)되었습니다.");
+        }
+    }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample10_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample10 -->
+
+            <article id="sample11">
+				<h1>11. break문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    //while문을 이용해서 0~20까지 출력
+    let num = 1;
+    while(num &lt;= 20){
+        document.write(num);
+        if(num == 10){
+            break;
+        }
+        num++;
+    }
+    
+    //for문을 이용해서 0~20 출력
+    for(let i = 1; i &lt;= 20; i++){
+        document.write(i);
+        if(i == 10){
+            break;
+        }
+    }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample11_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample11 -->
+
+            <article id="sample12">
+				<h1>12. continue문</h1>
+				<section class="container">
+                    <div class="code">
+                        <pre class="line-numbers">
+<code class="language-js">{
+    let num = 0;
+    while(num &lt; 10){
+        num++;
+        if ( num == 5){
+            continue;
+        }
+        document.write(num);
+    }
+
+    for(let i = 1; i&lt;=10; i++){
+        if( i == 5){
+            continue;
+        }
+        document.write(i);
+    }
+}</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 보기</summary>
+                                <div class="open sample12_result">
+                            </div>
+                        </details>
+                    </div>
+				</section>
+			</article>
+			<!-- //sample12 -->
+
+		</div>
+	</main>
+	<!-- //main -->
+
+	<footer id="footer">
+		<div class="container">
+			<p>Maintained by <a href="https://github.com/byahram">Ahram Kim</a></p>
+			<ul>
+				<li><a href="https://github.com/byahram"><i class="fa-brands fa-github"></i></a></li>
+				<li><a href="https://codepen.io/ahram-kim"><i class="fa-brands fa-codepen"></i></a></li>
+				<li><a href="https://app.netlify.com/teams/byahram/overview"><i class="fa-solid fa-pager"></i></a></li>
+				<li><a href="https://www.instagram.com/__ahram.k/"><i class="fa-brands fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+	<button class="arrow-up" data-link="#nav">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- script -->
+    <script src="assets/js/prism.js"></script>
+    <script src="assets/js/script.js"></script>
+	<script>
+		//01. if문
+        {
+            //조건문
+            if(true){
+               document.querySelector(".sample01_result").innerHTML = "실행되었습니다.(true)"; 
+            } else {
+                document.querySelector(".sample01_result").innerHTML = "실행되었습니다.(false)"; 
+            }
+        }
+
+        //02. if문 생략 (중괄호 생략!!!)
+        {
+            const num = 100;
+
+            if(num == 100) document.querySelector(".sample02_result").innerHTML = "실행되었습니다.(true)";
+            else document.querySelector(".sample02_result").innerHTML = "실행되었습니다.(false)";
+        }
+
+        //03. 다중 if문
+        {
+            const num = 100;
+
+            if(num == 90){
+                document.querySelector(".sample03_result").innerHTML = "실행되었습니다.(num==90)";
+            } else if (num == 100){
+                document.querySelector(".sample03_result").innerHTML = "실행되었습니다.(num==100)";
+            } else if (num == 110){
+                document.querySelector(".sample03_result").innerHTML = "실행되었습니다.(num==110)";
+            } else if (num == 120){
+                document.querySelector(".sample03_result").innerHTML = "실행되었습니다.(num==120)";
+            } else {
+                document.querySelector(".sample03_result").innerHTML = "실행되었습니다.(num==값이없음)";
+            }
+        }
+
+        //04. 중첩 if문
+        {
+            const num = 100;
+
+            if(num == 100){
+                document.querySelector(".sample04_result").innerHTML = "실행되었습니다.(1)<br>";
+                if(num == 100){
+                    document.querySelector(".sample04_result").innerHTML += "실행되었습니다.(2)<br>";
+                    if(num == 100){
+                        document.querySelector(".sample04_result").innerHTML += "실행되었습니다.(3)";
+                    }
+                }
+            } else {
+                document.querySelector(".sample04_result").innerHTML = "실행되었습니다.(4)";
+            }
+        }
+        //05. 삼항 연산자(조건부 연산자)
+        {
+            const num = 100;
+
+            // if(num == 100){
+            //     document.querySelector(".result5").innerHTML = "true<br>";
+            // } else {
+            //     document.querySelector(".result5").innerHTML = "false<br>";
+            // }
+
+            (num == 100) ? document.querySelector(".sample05_result").innerHTML += "true" : document.querySelector(".sample05_result").innerHTML += "false";
+        }
+
+        //06. switch문
+        {
+            const num = 100;
+
+            switch(num){
+                case 100 :
+                    document.querySelector(".sample06_result").innerHTML = "실행되었습니다(num==100)";
+                break;
+                case 200 :
+                    document.querySelector(".sample06_result").innerHTML = "실행되었습니다(num==200)";
+                break;
+                case 300 :
+                    document.querySelector(".sample06_result").innerHTML = "실행되었습니다(num==300)";
+                break;
+                case 400 :
+                    document.querySelector(".sample06_result").innerHTML = "실행되었습니다(num==400)";
+                break;
+                default :
+                    document.querySelector(".sample06_result").innerHTML = "실행되었습니다(num==값이없음)";
+            }
+        }
+
+        //07. while문
+        {
+            let num = 1;
+
+            while(num <= 5){
+                document.querySelector(".sample07_result").innerHTML += num + ". 실행되었습니다." + "<br>";
+                num++;
+            }
+        }
+
+        //08. do while문
+        {
+            let num = 1;
+            
+            do {
+                document.querySelector(".sample08_result").innerHTML += num + ". 실행되었습니다.<br>";
+                num++;
+            } while (num <= 5)
+        }
+
+        //09. for문
+        {
+            for(let i=1; i<=5; i++){
+                document.querySelector(".sample09_result").innerHTML += i + ". 실행되었습니다.<br>";
+            }
+        }
+
+        //10. 중첩 for문
+        {
+            for(let i=1; i<=2; i++){
+                document.querySelector(".sample10_result").innerHTML += i + ". 실행(i)되었습니다.<br><br>";
+                for(let j=1; j<=3; j++){
+                    document.querySelector(".sample10_result").innerHTML += j + ". 실행(j)되었습니다.<br>";
+                }
+                if(i!=2){
+                    document.querySelector(".sample10_result").innerHTML += "<br>";
+                }
+            }
+        }
+
+        //11. break문
+        {
+            //while문을 이용해서 0~20까지 출력
+            let num = 1;
+            while(num <= 20){
+                document.querySelector(".sample11_result").innerHTML += num + " ";
+                if(num == 10){
+                    break;
+                }
+                num++;
+            }
+
+            document.querySelector(".sample11_result").innerHTML += "<br>";
+        
+            //for문을 이용해서 0~20 출력
+            for(let i = 1; i <= 20; i++){
+                
+                document.querySelector(".sample11_result").innerHTML += i + " ";
+                if(i == 10){
+                    break;
+                }
+            }
+        }
+
+        //12. continue문
+        {
+            //while문을 이용해서 1~10까지 출력
+            let num = 0;
+            while(num < 10){
+                num++;
+                if ( num == 5){
+                    continue;
+                }
+                document.querySelector(".sample12_result").innerHTML += num + " ";
+            }
+
+            document.querySelector(".sample12_result").innerHTML += "<br>";
+
+
+            //for문을 이용해서 1~10까지 출력
+            for(let i = 1; i<=10; i++){
+                if( i == 5){
+                    continue;
+                }
+                document.querySelector(".sample12_result").innerHTML += i + " ";
+            }
+        }
+	</script>
+</body>
+</html>
