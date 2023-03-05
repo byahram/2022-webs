@@ -29,14 +29,14 @@
 * Parallax Effects - [view](https://byahram.github.io/webs/study/effects/parallax) <br/>
 
 ## game effects
-* drawing-app - [view]()
-* memory-card - [view]()
-* music-player - [view]()
-* resize-images - [view]()
-* typing-speed - [view]()
-* word-scramble - [view]()
+* drawing-app - [view](https://byahram.github.io/webs/study/effects/game/drawing-app)
+* memory-card - [view](https://byahram.github.io/webs/study/effects/game/memory-card)
+* music-player - [view](https://byahram.github.io/webs/study/effects/game/music-player)
+* resize-images - [view](https://byahram.github.io/webs/study/effects/game/resize-images)
+* typing-speed - [view](https://byahram.github.io/webs/study/effects/game/typing-speed)
+* word-scramble - [view](https://byahram.github.io/webs/study/effects/game/word-scramble)
 
 ## websites
 * Webstandard Site - [view](https://byahram.github.io/webs/study/websites/webstandard) <br/>
 * Responsive Site - [view](https://byahram.github.io/webs/study/websites/responsive) <br/>
-* Megabox Site - [view](https://byahram.github.io/webs-study/websites/megabox) <br/>
+* Megabox Site - [view](https://byahram.github.io/webs/study/websites/megabox) <br/>
