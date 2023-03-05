@@ -1,2 +1,42 @@
 # webs
-2022.09 ~ 2023.10 웹스토리보이 26기
+2022.09 ~ 2023.10 웹스토리보이 26기<br><br><br>
+
+# webs/lecture
+### react-1 - [view](https://webs-react-1.netlify.app)<br>
+### react-idaho - [view](https://webs-react-idaho.netlify.app)<br>
+### react-api - [view](https://webs-react-api.netlify.app)<br>
+### vue-api - [view](https://webs-vue-api.netlify.app)<br>
+### php - [view]()<br><br><br>
+
+# webs/note
+### JavaScript Study Note - [view](https://byahram.github.io/webs/note/javascript) <br/>
+### Programmers Algorithms Study Note - [view](https://byahram.github.io/webs/note/programmers) <br/><br><br>
+
+# webs/portfolio
+[view my first portfolio](https://byahram.github.io/webs/portfolio)<br><br><br>
+
+# webs/study
+## anims
+* Animations 01 - [view](https://byahram.github.io/webs/study/anims/anim_01_bar.html) <br/>
+* Animations 02 - [view](https://byahram.github.io/webs/study/anims/anim_02_wave.html) <br/>
+* Animations 03 - [view](https://byahram.github.io/webs/study/anims/anim_03_cube.html) <br/>
+* Animations 04 - [view](https://byahram.github.io/webs/study/anims/anim_04_dot.html) <br/>
+* Animations 05 - [view](https://byahram.github.io/webs/study/anims/anim_05_Tail.html) <br/>
+
+## effects
+* Mouse Effects - [view](https://byahram.github.io/webs/study/effects/mouse) <br/>
+* Slider Effects - [view](https://byahram.github.io/webs/study/effects/slider) <br/>
+* Parallax Effects - [view](https://byahram.github.io/webs/study/effects/parallax) <br/>
+
+## game effects
+* drawing-app - [view]()
+* memory-card - [view]()
+* music-player - [view]()
+* resize-images - [view]()
+* typing-speed - [view]()
+* word-scramble - [view]()
+
+## websites
+* Webstandard Site - [view](https://byahram.github.io/webs/study/websites/webstandard) <br/>
+* Responsive Site - [view](https://byahram.github.io/webs/study/websites/responsive) <br/>
+* Megabox Site - [view](https://byahram.github.io/webs-study/websites/megabox) <br/>
