@@ -1,5 +1,5 @@
 # webs
-2022.09 ~ 2023.10 웹스토리보이 26기<br><br><br>
+2022.09 ~ 2022.11 웹스토리보이 26기<br><br><br>
 
 # webs/lecture
 ### react-1 - [view](https://webs-react-1.netlify.app)<br>
